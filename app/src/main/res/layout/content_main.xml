@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.btconnect.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_gravity="center"
+        android:text="BT Connect"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:typeface="monospace"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="type command"
+        android:padding="16dp"
+        android:id="@+id/editText"/>
+
+    <Button
+        android:text="Push Command"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/push_command_button"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:background="@drawable/my_button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of Commands"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Type b to beep phone "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Type s to shake phone "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Type f to turn on flash phone "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Type a to flash, beep and shake phone "/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
